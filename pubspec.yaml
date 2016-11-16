@@ -1,0 +1,6 @@
+name: duo
+description: A new flutter project.
+dependencies:
+  flutter:
+    sdk: flutter
+  csv:

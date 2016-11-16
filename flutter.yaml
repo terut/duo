@@ -1,0 +1,4 @@
+name: duo
+uses-material-design: true
+assets:
+  - assets/csv/all.csv
