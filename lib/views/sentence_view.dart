@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import '../models/sentence.dart';
 
 class SentenceView extends StatefulWidget {
   SentenceView({Key key, this.sentence}) : super(key: key);
