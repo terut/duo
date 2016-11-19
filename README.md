@@ -20,7 +20,7 @@ $ cp $YOUR_DIR/all.csv assets/csv/all.csv
 ```
 
 続いてIntelliJを開く。
-新しく開いた場合は、[Create New Project]をクリック。もし開いてる場合は、メニューから[New] -> []
+新しく開いた場合は、[Create New Project]をクリックし、もし開いてる場合は、メニューから[File] -> [New] -> [Project]をクリックする。
 
 [Flutter] -> [Next]を選択し、Project locationの設定からduoをcloneした場所を探し、duoディレクトリを選択して[OK] -> [Finish]を押す。
 duo.imiを上書きするか聞かれたら[Yes]で良い。
@@ -41,4 +41,4 @@ For help getting started with Flutter, view our online
 
 ## LICENSE
 
-comming soon...
+MIT
