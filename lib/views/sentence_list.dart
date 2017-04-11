@@ -63,7 +63,7 @@ class _SentenceListState extends State<SentenceList> {
   }
 
   Iterable<Widget> _buildList() {
-    return config.section.sentences.map((Sentence sentence) {
+    return widget.section.sentences.map((Sentence sentence) {
       return new SentenceListItem(
           sentence: sentence,
           onSentenceSelected: _handleSentenceSelected,
@@ -75,7 +75,7 @@ class _SentenceListState extends State<SentenceList> {
   Widget build(BuildContext context) {
     return new Scaffold(
         appBar: new AppBar(
-            title: new Text('Section ${config.section.number}'),
+            title: new Text('Section ${widget.section.number}'),
             ),
         body: new MaterialList(
             type: MaterialListType.twoLine,
