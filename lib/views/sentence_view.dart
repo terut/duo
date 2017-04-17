@@ -18,7 +18,7 @@ class _SentenceViewState extends State<SentenceView> {
     _formKey.currentState.save();
 
     setState(() {
-      if(_inputSentence != config.sentence.en) {
+      if(_inputSentence != widget.sentence.en) {
         _validSentence = false;
       } else {
         _validSentence = true;
@@ -36,7 +36,7 @@ class _SentenceViewState extends State<SentenceView> {
         color = Colors.red[200];
       }
       text = new Text(
-          config.sentence.en,
+          widget.sentence.en,
           style: new TextStyle(color: color),
           );
     }
@@ -45,7 +45,7 @@ class _SentenceViewState extends State<SentenceView> {
       new SizedBox(
           height: 65.0,
           child: new Text(
-              config.sentence.jp,
+              widget.sentence.jp,
               style: new TextStyle(fontFamily: "Hiragino Kaku Gothic ProN"),
               ),
           ),
@@ -78,7 +78,7 @@ class _SentenceViewState extends State<SentenceView> {
   Widget build(BuildContext context) {
     return new Scaffold(
         appBar: new AppBar(
-            title: new Text('Sentence ${config.sentence.number}'),
+            title: new Text('Sentence ${widget.sentence.number}'),
             ),
         body: new Block(
             padding: const EdgeInsets.symmetric(vertical: 15.0, horizontal: 10.0),

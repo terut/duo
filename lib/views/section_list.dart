@@ -19,7 +19,7 @@ class _SectionListState extends State<SectionList> {
     super.initState();
     builder.build().then((List<Section> list) {
       setState(() {
-        config.sections = list;
+        widget.sections = list;
       });
     });
   }
@@ -32,7 +32,7 @@ class _SectionListState extends State<SectionList> {
   }
 
   Iterable<Widget> _buildBox(BuildContext context) {
-    return config.sections.map((Section section) {
+    return widget.sections.map((Section section) {
       return new GestureDetector(
           onTap: () {
             _handleSectionSelected(section);
